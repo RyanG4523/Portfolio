@@ -1,0 +1,112 @@
+body {
+  background-color: #999999;
+  color: white;
+  font-family: "Courier Prime", monospace;
+}
+
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: rgba(34, 36, 78, 1);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+h1 {
+  grid-column: span 12;
+  color: white;
+  background-color: rgba(58, 56, 56, 1);
+  text-transform: uppercase;
+  padding: 24px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  border-bottom: white solid 3px;
+  grid-column: span 2;
+}
+
+
+nav { 
+  grid-column: span 12;
+  margin: 0px;
+  border-bottom: 5px black;
+  background-color: rgba(58, 56, 56, 1);
+  test-transform: uppercase;
+    border-radius: 10px;
+  }             
+
+     nav ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    nav li {
+      display: inline-block;
+      grid-column: span 12;
+      color: lightblue;
+      font-weight: bold;
+      text-align: center;
+      width: 170px;
+      margin: 30px;
+    }
+
+    nav li a {
+      display: block;
+      background-image:rgba(58, 56, 56, 1);
+      border-left: 1px solid black;
+      border-right: 0px solid black;
+      padding: 1em;
+      color: white;
+      text-decoration: none;
+      transition: color 1.0s, width 2.0s, color 2.0s;
+    }
+
+    nav a:hover {
+      background-color: #1260b8;
+  width: 200px;
+  color: rgb(255, 0, 0);
+    }
+
+main {
+  color: white;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.game {
+margin: 8px;
+Border: solid white 5px;
+}
+
+aside {
+  display: flex;
+  grid-column: span 12;
+  border-bottom: 50px white;
+}
+
+footer{
+grid-column: span 12;
+color: white;
+background-color: rgba(58, 56, 56, 1);
+padding: 24px;
+text-align: right;
+font-weight: bold;
+}
+  
+  footer a {
+  color:white;
+  font-size: 5em;
+  }
+  
+  footer a hover {
+  color:rgb(255, 0, 0)
+  }
